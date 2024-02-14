@@ -2,54 +2,34 @@
 sidebar_position: 1
 ---
 
-# Manage Docs Versions
+# Tile One
 
 Docusaurus can manage multiple versions of your docs.
 
-## Create a docs version
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores
+qui hic praesentium quo natus fugit, delectus tenetur ex laboriosam
+dolorum commodi quia. Fugit enim rerum quia reiciendis accusamus
+molestiae?
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores
+qui hic praesentium quo natus fugit, delectus tenetur ex laboriosam
+dolorum commodi quia. Fugit enim rerum quia reiciendis accusamus
+molestiae?
 
-Release a version 1.0 of your project:
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores
+qui hic praesentium quo natus fugit, delectus tenetur ex laboriosam
+dolorum commodi quia. Fugit enim rerum quia reiciendis accusamus
+molestiae?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores
+qui hic praesentium quo natus fugit, delectus tenetur ex laboriosam
+dolorum commodi quia. Fugit enim rerum quia reiciendis accusamus
+molestiae?
 
-```bash
-npm run docusaurus docs:version 1.0
-```
-
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
-
-Your docs now have 2 versions:
-
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
-
-## Add a Version Dropdown
-
-To navigate seamlessly across versions, add a version dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The docs version dropdown appears in your navbar:
-
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
-
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores
+qui hic praesentium quo natus fugit, delectus tenetur ex laboriosam
+dolorum commodi quia. Fugit enim rerum quia reiciendis accusamus
+molestiae?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores
+qui hic praesentium quo natus fugit, delectus tenetur ex laboriosam
+dolorum commodi quia. Fugit enim rerum quia reiciendis accusamus
+molestiae?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores
+qui hic praesentium quo natus fugit, delectus tenetur ex laboriosam
+dolorum commodi quia. Fugit enim rerum quia reiciendis accusamus
+molestiae?
