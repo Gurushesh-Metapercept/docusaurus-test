@@ -9,7 +9,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "This is landing page",
-  tagline: "Hello World",
+  tagline:
+    "Docusaurus is an open-source project for building, deploying, and maintaining open-source project websites easily. It provides a framework and set of tools to streamline the process of creating documentation websites. Developed by Facebook, Docusaurus is particularly popular among developers for its simplicity and ease of use.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -66,14 +67,14 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "My Site",
+        title: "LOGO",
 
         items: [
           {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Docs",
+            label: "Click here for Docs",
           },
 
           // {

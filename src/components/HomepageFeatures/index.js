@@ -4,74 +4,43 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "Hello World",
+    title: "Markdown-based Content:",
 
     description: (
       <>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero
-        vitae tempora, repellendus veritatis nobis odio eligendi vero commodi
-        minus sapiente tenetur officia? Saepe nisi modi ipsa recusandae vitae
-        ducimus!
+        Docusaurus allows users to write documentation content in Markdown
+        format, making it easy to create and manage documentation.
       </>
     ),
   },
   {
-    title: "This is tile",
+    title: "Customizable Themes:",
 
     description: (
       <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eligendi
-        nesciunt. Quam quasi doloribus quidem praesentium accusamus neque
-        recusandae magni debitis ducimus ipsam hic quod nihil, natus commodi
-        harum! Laborum!
+        It offers customizable themes and styling options, allowing users to
+        tailor the look and feel of their documentation sites to match their
+        project's branding.
       </>
     ),
   },
   {
-    title: "HEllooooo",
+    title: "Search Functionality:",
 
     description: (
       <>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores
-        qui hic praesentium quo natus fugit, delectus tenetur ex laboriosam
-        dolorum commodi quia. Fugit enim rerum quia reiciendis accusamus
-        molestiae?
+        It includes built-in search functionality, making it easy for users to
+        search for specific content within the documentation site.
       </>
     ),
   },
   {
-    title: "abc def",
+    title: "Integration with GitHub Pages and Vercel:",
 
     description: (
       <>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores
-        qui hic praesentium quo natus fugit, delectus tenetur ex laboriosam
-        dolorum commodi quia. Fugit enim rerum quia reiciendis accusamus
-        molestiae?
-      </>
-    ),
-  },
-  {
-    title: "lorem ipsum",
-
-    description: (
-      <>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores
-        qui hic praesentium quo natus fugit, delectus tenetur ex laboriosam
-        dolorum commodi quia. Fugit enim rerum quia reiciendis accusamus
-        molestiae?
-      </>
-    ),
-  },
-  {
-    title: "helo 123",
-
-    description: (
-      <>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores
-        qui hic praesentium quo natus fugit, delectus tenetur ex laboriosam
-        dolorum commodi quia. Fugit enim rerum quia reiciendis accusamus
-        molestiae?
+        Docusaurus can be easily integrated with GitHub Pages or Vercel for
+        hosting, making deployment straightforward.
       </>
     ),
   },
@@ -79,7 +48,14 @@ const FeatureList = [
 
 function Feature({ title, description }) {
   return (
-    <div className={clsx("col col--4")}>
+    <div
+      className={clsx("col col--4 item shadow--md")}
+      style={{
+        border: "1px solid var(--ifm-color-primary-darkest)",
+        padding: "1rem",
+        borderRadius: "5px",
+      }}
+    >
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
@@ -92,7 +68,17 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
+        <h2 style={{ textAlign: "center", marginBottom: "4rem" }}>
+          Key features of Docusaurus include:
+        </h2>
+        <div
+          className="row"
+          style={{
+            gap: "1rem",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

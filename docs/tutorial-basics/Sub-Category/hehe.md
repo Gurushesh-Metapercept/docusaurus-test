@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+slug: /hehe-my
+sidebar_label: Sub-File 1
 ---
 
 # Hello
