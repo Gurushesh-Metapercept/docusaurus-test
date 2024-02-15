@@ -47,43 +47,46 @@ const config = {
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
       }),
     ],
   ],
+  themes: [require.resolve("@easyops-cn/docusaurus-search-local")],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+
       navbar: {
         title: "LOGO",
-
+        logo: {
+          alt: "My Site Logo",
+          src: "img/logo.svg",
+        },
         items: [
           {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Click here for Docs",
+            label: "Introduction",
           },
-
-          // {
-          //   href: "https://github.com/facebook/docusaurus",
-          //   label: "GitHub",
-          //   position: "right",
-          // },
+          {
+            href: "/docs/category/category-1",
+            label: "Category 1",
+            position: "left",
+          },
+          {
+            href: "/docs/category/category-2",
+            label: "Category 2",
+            position: "left",
+          },
         ],
       },
+
       footer: {
         style: "dark",
         links: [
