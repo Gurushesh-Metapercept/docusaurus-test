@@ -68,11 +68,16 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
+          // {
+          //   type: "docSidebar",
+          //   sidebarId: "tutorialSidebar",
+          //   position: "left",
+          //   label: "Introduction",
+          // },
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
+            href: "/docs/intro",
             label: "Introduction",
+            position: "left",
           },
           {
             href: "/docs/category/category-1",
