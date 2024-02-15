@@ -84,6 +84,11 @@ const config = {
           // },
         ],
       },
+      algolia: {
+        apiKey: "88472ad29d7cee02ddb44b3a265f532e",
+        indexName: "docu_index",
+        appId: "NCKW3MSGI9",
+      },
       footer: {
         style: "dark",
         links: [
